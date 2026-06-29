@@ -1,17 +1,21 @@
 variable "aws_access_key" {
-  type = string
-  default = "AKIAVY2ECDRDLONW3IO4"
+  type      = string
   sensitive = true
 }
 
 variable "aws_secret_key" {
-  type = string
-  default = "nE33XDpxJ7gP1PN1OS+pCJCU5JVPHGwpAQeo8mSY"
+  type      = string
   sensitive = true
 }
 
+variable "db_username" {
+  description = "Username for the DB instance"
+  type        = string
+  sensitive   = true
+}
+
 variable "db_password" {
-  type = string
-  default = "password123"
-  sensitive = true
+  description = "Password for the DB instance"
+  type        = string
+  sensitive   = true
 }
